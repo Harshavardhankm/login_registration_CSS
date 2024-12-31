@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PopUp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h4>Logo</h4>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a id="home" href="#">Home</a></li>
+                    <li><a id="about" href="#">About</a></li>
+                    <li><a id="services" href="#">Services</a></li>
+                    <li><a id="contact" href="#">Contact</a></li>
+                    <li><button type="button" id="login" onclick="poplogin()">Login</button></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="popup_login" id="popupL">
+        <div class="popup_close">
+            <button type="button" id="close" onclick="closse()">X</button>
+        </div>
+        <div class="popup_form">
+             <form action="#">
+                <h2>Login</h2>
+                <input type="email" id="email" placeholder="Email">
+                <input type="password" id="password" placeholder="Password"><br>
+                <input type="checkbox" id="remember"><label for="remember">Remember Me</label>
+                <a id="forgot" href="#">Forgot Password?</a><br>
+                <button type="submit">Login</button>
+                <p>Don't have an account? <a id="register" href="#" onclick="popRegister()">Register</a></p>
+            </form>
+        </div>
+    </div>
+    <div class="popup_register" id="popupR">
+        <div class="popup_rclose">
+            <button type="button" id="rclose" onclick="closse()">X</button>
+        </div>
+        <div class="rpopup_form">
+             <form action="#">
+                <h2>Registration</h2>
+                <input type="text" id="user" placeholder="Username">
+                <input type="email" id="remail" placeholder="Email">
+                <input type="password" id="rpassword" placeholder="Password"><br>
+                <input type="checkbox" id="rremember"><label for="rremember">I agree to the terms & conditions</label>
+                <button type="submit">Register</button>
+                <p>Already have an account? <a id="account" href="#" onclick="poplogin()">Login</a></p>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
