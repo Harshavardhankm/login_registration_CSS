@@ -66,6 +66,9 @@ h4{
     transition: 0.9s;
     cursor: pointer;
 }
+
+/* .......................................................................... */
+
 header div ul li a {
     position: relative;
     text-decoration: none;
@@ -85,6 +88,8 @@ header div ul li a::before {
 header div ul li a:hover::before {
     width: 100%;
 }
+
+/* .......................................................................... */
 
 .popup_login{
     display: none;
